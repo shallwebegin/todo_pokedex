@@ -19,4 +19,12 @@ class UIHelper {
   }
 
   static BorderRadius pokelistItemBorderRadius = BorderRadius.circular(15.w);
+
+  static double calculatePokeImgAndBallSize() {
+    if (ScreenUtil().orientation == Orientation.portrait) {
+      return 0.2.sw;
+    } else {
+      return 0.2.sh;
+    }
+  }
 }
