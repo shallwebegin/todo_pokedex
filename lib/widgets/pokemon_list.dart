@@ -5,7 +5,8 @@ import 'package:todo_pokedex/services/pokedex_api.dart';
 import 'package:todo_pokedex/widgets/pokelist_item.dart';
 
 class PokeList extends StatefulWidget {
-  const PokeList({super.key});
+  // ignore: prefer_const_constructors_in_immutables
+  PokeList({super.key});
 
   @override
   State<PokeList> createState() => _PokeListState();
@@ -29,6 +30,7 @@ class _PokeListState extends State<PokeList> {
           if (snapshot.hasData) {
             List<PokemonModel> listem = snapshot.data!;
             return GridView.builder(
+                itemCount: listem.length,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount:
                       ScreenUtil().orientation == Orientation.portrait ? 2 : 3,

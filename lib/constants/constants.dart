@@ -15,12 +15,10 @@ class Constants {
   static TextStyle get pokemonNameTextstyle => TextStyle(
       color: Colors.white,
       fontWeight: FontWeight.bold,
-      fontSize: _calculateFontSize(28));
+      fontSize: _calculateFontSize(22));
 
-  static TextStyle get typeChipTextstyle => TextStyle(
-      color: Colors.white,
-      fontWeight: FontWeight.bold,
-      fontSize: _calculateFontSize(20));
+  static TextStyle get typeChipTextstyle =>
+      TextStyle(color: Colors.white, fontSize: _calculateFontSize(20));
 
   static _calculateFontSize(int size) {
     if (ScreenUtil().orientation == Orientation.portrait) {

@@ -9,9 +9,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: OrientationBuilder(
-        builder: (context, orientation) => const Column(
+        builder: (context, orientation) => Column(
           children: [
-            CustomAppbar(),
+            const CustomAppbar(),
             Expanded(child: PokeList()),
           ],
         ),
