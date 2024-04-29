@@ -22,7 +22,7 @@ class UIHelper {
     if (ScreenUtil().orientation == Orientation.portrait) {
       return EdgeInsets.all(10.h);
     } else {
-      return EdgeInsets.all(6.w);
+      return EdgeInsets.all(4.w);
     }
   }
 
